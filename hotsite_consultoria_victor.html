@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor Gianotto | Consultoria de Processos Humanizada</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    * { box-sizing: border-box; }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .content {
+      background: linear-gradient(to bottom, #e9f2f1, #ffffff);
+      color: #1a1a1a;
+    }
+    header {
+      background: linear-gradient(to right, #0e2e2e, #145252);
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0));
+      transform: skewX(-20deg);
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease;
+      position: relative;
+      z-index: 1;
+    }
+    header p {
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: 0 auto;
+      animation: fadeInUp 1s ease;
+      position: relative;
+      z-index: 1;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      margin-top: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease forwards;
+    }
+    h2 {
+      color: #0e2e2e;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: #666;
+      background: #f4f4f4;
+    }
+    .whatsapp-button {
+      background: #145252;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.3s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .whatsapp-button:hover {
+      background: #0e2e2e;
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .icon-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .icon-card {
+      flex: 1 1 200px;
+      background: #f4f8f7;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+    .icon-card:hover {
+      transform: translateY(-5px);
+    }
+    .icon-card img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+    .icon-card h3 {
+      margin: 10px 0;
+      font-size: 1.1em;
+      color: #145252;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+    .contact-info img {
+      width: 24px;
+      margin-right: 10px;
+    }
+    .contact-info a {
+      color: #145252;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <header>
+      <h1>Consultoria de Processos Humanizada</h1>
+      <p>Alinhando pessoas e processos para construir ambientes de trabalho mais saudáveis, conscientes e produtivos.</p>
+    </header>
+
+    <section>
+      <h2>Apresentação</h2>
+      <p>Sou Victor Gianotto, especialista em transformar o ambiente empresarial através do alinhamento entre pessoas e processos. Acredito que organizações saudáveis nascem quando há clareza de propósito, boas relações e estruturas que funcionam com leveza. Minha missão é facilitar esse equilíbrio, promovendo diagnósticos profundos, práticas regenerativas e estratégias sob medida para ampliar a qualidade de vida e a performance organizacional.</p>
+      <div class="icon-section">
+        <div class="icon-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="Diagnóstico">
+          <h3>Escuta Ativa</h3>
+          <p>Processos personalizados a partir da escuta real da sua equipe e contexto.</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Cultura Organizacional">
+          <h3>Estratégia Humanizada</h3>
+          <p>Foco em relações autênticas e soluções que respeitam as pessoas.</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3063/3063826.png" alt="Resultados">
+          <h3>Resultados Sustentáveis</h3>
+          <p>Transformações que perduram e geram impacto positivo a longo prazo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Portfólio de Serviços</h2>
+      <ul>
+        <li><strong>Mapeamento de pessoas-chave e gargalos nos processos:</strong> diagnóstico preciso de fluxos críticos e responsabilidades.</li>
+        <li><strong>Facilitação de alinhamentos estratégicos:</strong> encontros estruturados para tomada de decisão com clareza e coesão.</li>
+        <li><strong>Treinamentos em liderança consciente, comunicação e bem-estar:</strong> desenvolvimento humano com base em competências socioemocionais.</li>
+        <li><strong>Consultoria contínua para manutenção da cultura e produtividade saudável:</strong> presença constante para apoiar transformações reais.</li>
+        <li><strong>Mentorias individuais ou em grupo para gestores:</strong> espaço seguro para refletir, evoluir e liderar com autenticidade.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <div class="contact-info">
+        <a href="tel:+5551993232733">
+          <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Telefone">
+          (051) 99323-2733
+        </a>
+        <a href="mailto:gianotto@gmail.com">
+          <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+          gianotto@gmail.com
+        </a>
+      </div>
+      <a class="whatsapp-button" href="https://wa.me/5551993232733" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 20px; height: 20px;" />
+        Fale comigo agora
+      </a>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Victor Gianotto. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
